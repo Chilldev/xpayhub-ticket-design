@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+.ticket-container {
+	background-color: #FFFFFF;
+    min-height: 275px;
+    height: auto;
+    border: 1px solid #d3d3d3;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    
+    .first-row,
+    .second-row,
+    .third-row {
+        display: flex;
+    }
+
+    .first-row {
+        min-height: 95px;
+        .event-info {
+            padding-left: 20px;
+            margin-top: 50px;
+            .title {
+                font-family: sans-serif;
+                font-size: 25px;
+                font-weight: lighter;
+                color: #6048cf;
+            }
+            .company {
+                font-family: sans-serif;
+                font-size: 12px;
+                color: #8f76ff;
+                margin-bottom: 5px;
+            }
+        }
+        .top-right {
+            height: 100%;
+            text-align: center;
+            img {
+                z-index: 2;
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                box-shadow: 0px 0px 6px 3px #b2bae2;
+                vertical-align: middle;
+            }
+        }
+    }
+    .second-row {
+        padding-left: 20px;
+        background-color: #27e2c6;
+        position: relative;
+        height: auto;
+        .event-date,
+        .event-location {
+            min-height: 35px;
+            margin: 0 10px;
+            display: inline-block;
+            img {
+                width: 15px;
+                height: 15px;
+                padding-right: 10px;
+                vertical-align: middle;
+            }
+            span {
+                font-size: 13px;
+                letter-spacing: 0.5px;
+                font-weight: bold;
+                color: #FFFFFF;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .ticket-icon {
+            img {
+                width: 80px;
+                position: absolute;
+                left: 60%;
+                top: -150%;
+            }
+        }
+    }
+
+    .third-row {
+        min-height: 140px;
+        .holder-info {
+            background-color: #f8f9ff;
+            padding-left: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+            min-height: calc(100% - 30px);
+            padding-top: 15px;
+            .title {
+                font-size: 16px;
+                letter-spacing: 1.8px;
+                color: #8f76ff;
+                margin-top: 10px;
+            }
+            .info {
+                font-size: 13px;
+                line-height: 1.5;
+                color: #575084;
+                p {
+                    margin: 0;
+                    padding: 0;
+
+                }
+            }
+            .price {
+                color: #27e2c6;
+                font-size: 24px;
+                font-weight: bold;
+                .egp {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+            .ticket-holder,
+            .optionals,
+            .type,
+            .ticket-price {
+                margin-right: 20px;
+            }
+        }
+        .footer-message {
+            padding: 5px 0 0 20px;
+            height: 30px;
+            .text {
+                font-family: sans-serif;
+                font-size: 12px;
+                font-weight: 300;
+                color: #27e2c6;
+            }
+        }
+    
+        .bottom-right {
+            min-height: 140px;
+            text-align: center;
+            height: 100%;
+            img {
+                width: 90px;
+                height: 90px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .ticket-left-side {
+        width: 87%
+    }
+    .ticket-right-side {
+        background-color: #e5e9fd;   
+        min-width: 100px; 
+    }
+    .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }    
+}
