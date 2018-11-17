@@ -125,18 +125,21 @@ body {
     transition: all 0.3s ease-in-out; }
   .preview-interface-view .toggle-drawer-close:before {
     left: 18px;
-    -ms-transform: rotate(45deg);
-        transform: rotate(45deg); }
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
   .preview-interface-view .toggle-drawer-close:after {
     right: 18px;
-    -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 .preview-interface-view .mobile-drawer-hidden .toggle-drawer-close:before, .preview-interface-view .mobile-drawer-hidden .toggle-drawer-close:after {
   width: 1px;
   opacity: 0;
-  -ms-transform: rotate(0deg);
-      transform: rotate(0deg); }
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg); }
 
 .preview-interface-view .mobile-drawer-hidden .toggle-drawer-close:before {
   left: 0; }
@@ -211,14 +214,32 @@ body {
     display: block;
     width: 80px;
     height: 80px;
-    -ms-transform: scale(0.2);
-        transform: scale(0.2);
-    animation-name: wilkomen;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; }
+    -webkit-transform: scale(0.2);
+        -ms-transform: scale(0.2);
+            transform: scale(0.2);
+    -webkit-animation-name: wilkomen;
+            animation-name: wilkomen;
+    -webkit-animation-duration: 1.8s;
+            animation-duration: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
   .welcome-view .animation--icon + .animation--icon span {
-    animation-delay: .9s; }
+    -webkit-animation-delay: .9s;
+            animation-delay: .9s; }
+
+@-webkit-keyframes wilkomen {
+  0% { }
+  25% {
+    background: #348eda; }
+  50% {
+    background: transparent;
+    box-shadow: inset 0 0 2px #348eda; }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    box-shadow: inset 0 0 2px rgba(52, 142, 218, 0); } }
 
 @keyframes wilkomen {
   0% { }
@@ -228,5 +249,6 @@ body {
     background: transparent;
     box-shadow: inset 0 0 2px #348eda; }
   100% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     box-shadow: inset 0 0 2px rgba(52, 142, 218, 0); } }

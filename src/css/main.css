@@ -323,7 +323,7 @@ pre,
 
 .ticket-container {
   background-color: #FFFFFF;
-  min-height: 275px;
+  min-height: 260px;
   height: auto;
   border: 1px solid #d3d3d3;
   width: 100%;
@@ -336,7 +336,7 @@ pre,
     min-height: 95px; }
     .ticket-container .first-row .event-info {
       padding-left: 60px;
-      margin-top: 50px; }
+      margin-top: 40px; }
       .ticket-container .first-row .event-info .title {
         font-family: sans-serif;
         font-size: 25px;
@@ -371,8 +371,9 @@ pre,
       .ticket-container .second-row .event-location img {
         width: 12px;
         height: 12px;
-        padding-right: 10px;
-        vertical-align: middle; }
+        vertical-align: middle;
+        padding: 0;
+        margin: -3px 5px 0 0; }
       .ticket-container .second-row .event-date span,
       .ticket-container .second-row .event-location span {
         font-size: 10px;
@@ -381,13 +382,15 @@ pre,
         color: #FFFFFF;
         display: inline-block;
         vertical-align: middle; }
+    .ticket-container .second-row .event-location {
+      margin-left: 10%; }
     .ticket-container .second-row .ticket-icon img {
-      width: 80px;
+      width: 70px;
       position: absolute;
-      left: 60%;
-      top: -165%; }
+      right: 22%;
+      top: -130%; }
   .ticket-container .third-row {
-    min-height: 140px; }
+    min-height: 130px; }
     .ticket-container .third-row .holder-info {
       background-color: #f8f9ff;
       padding-left: 60px;
@@ -397,7 +400,7 @@ pre,
       flex-wrap: wrap;
       font-family: sans-serif;
       min-height: calc(100% - 30px);
-      padding-top: 15px; }
+      padding-top: 5px; }
       .ticket-container .third-row .holder-info .title {
         font-size: 10px;
         color: #8f76ff;
@@ -405,7 +408,7 @@ pre,
         text-transform: uppercase;
         font-weight: bold; }
       .ticket-container .third-row .holder-info .info {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.5;
         color: #575084; }
         .ticket-container .third-row .holder-info .info p {
@@ -425,14 +428,14 @@ pre,
         margin-right: 20px; }
     .ticket-container .third-row .footer-message {
       padding: 5px 0 0 60px;
-      height: 30px; }
+      min-height: 30px; }
       .ticket-container .third-row .footer-message .text {
         font-family: sans-serif;
         font-size: 10px;
-        font-weight: bold;
+        font-weight: lighter;
         color: #27e2c6; }
     .ticket-container .third-row .bottom-right {
-      min-height: 144px;
+      min-height: 130px;
       text-align: center;
       height: 100%; }
       .ticket-container .third-row .bottom-right img {
