@@ -10,7 +10,6 @@
     margin: 0 auto;
     
     .first-row,
-    .second-row,
     .third-row {
         display: flex;
     }
@@ -18,7 +17,7 @@
     .first-row {
         min-height: 95px;
         .event-info {
-            padding-left: 20px;
+            padding-left: 60px;
             margin-top: 50px;
             .title {
                 font-family: sans-serif;
@@ -39,31 +38,31 @@
             img {
                 z-index: 2;
                 border-radius: 50%;
-                width: 75px;
-                height: 75px;
+                width: 60px;
+                height: 60px;
                 box-shadow: 0px 0px 6px 3px #b2bae2;
                 vertical-align: middle;
             }
         }
     }
     .second-row {
-        padding-left: 20px;
+        padding-left: 60px;
         background-color: #27e2c6;
         position: relative;
         height: auto;
         .event-date,
         .event-location {
-            min-height: 35px;
-            margin: 0 10px;
+            margin: 0 10px 0 0;
             display: inline-block;
+            padding: 5px 0;
             img {
-                width: 15px;
-                height: 15px;
+                width: 12px;
+                height: 12px;
                 padding-right: 10px;
                 vertical-align: middle;
             }
             span {
-                font-size: 13px;
+                font-size: 10px;
                 letter-spacing: 0.5px;
                 font-weight: bold;
                 color: #FFFFFF;
@@ -76,7 +75,7 @@
                 width: 80px;
                 position: absolute;
                 left: 60%;
-                top: -150%;
+                top: -165%;
             }
         }
     }
@@ -85,7 +84,7 @@
         min-height: 140px;
         .holder-info {
             background-color: #f8f9ff;
-            padding-left: 20px;
+            padding-left: 60px;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
@@ -94,10 +93,11 @@
             min-height: calc(100% - 30px);
             padding-top: 15px;
             .title {
-                font-size: 16px;
-                letter-spacing: 1.8px;
+                font-size: 10px;
                 color: #8f76ff;
                 margin-top: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
             }
             .info {
                 font-size: 13px;
@@ -126,18 +126,18 @@
             }
         }
         .footer-message {
-            padding: 5px 0 0 20px;
+            padding: 5px 0 0 60px;
             height: 30px;
             .text {
                 font-family: sans-serif;
-                font-size: 12px;
-                font-weight: 300;
+                font-size: 10px;
+                font-weight: bold;
                 color: #27e2c6;
             }
         }
     
         .bottom-right {
-            min-height: 140px;
+            min-height: 144px;
             text-align: center;
             height: 100%;
             img {
@@ -149,11 +149,11 @@
     }
 
     .ticket-left-side {
-        width: 87%
+        width: 84%
     }
     .ticket-right-side {
         background-color: #e5e9fd;   
-        min-width: 100px; 
+        min-width: 120px; 
     }
     .helper {
         display: inline-block;
